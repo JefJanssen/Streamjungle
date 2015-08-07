@@ -1,3 +1,10 @@
+<?
+$mcjson = file_get_contents("https://api.twitch.tv/kraken/streams?game=minecraft");
+$mcarray = json_decode($mcjson);
+?>
+
+
+
 <html>
 <head>
 
@@ -41,6 +48,907 @@
 		</div>
 	</div>
 </div>
+
+
+
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-9">
+			<div class="gametitle">
+				<h4 style="font-size: 30px;">Minecraft Streams</h4>
+			</div>
+			<div class="streampic">
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[0]->viewers; ?> viewers on <strong><? echo $mcarray->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[1]->viewers; ?> viewers on <strong><? echo $mcarray->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $mcarray->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $mcarray->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $mcarray->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $mcarray->streams[2]->viewers; ?> viewers on <strong><? echo $mcarray->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
 
 	<footer id="footer">
 		<div class="container">

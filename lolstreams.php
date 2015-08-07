@@ -1,5 +1,5 @@
 			<?
-			$loljson = file_get_contents("https://api.twitch.tv/kraken/streams?game=league+of+legends");
+			$loljson = file_get_contents("https://api.twitch.tv/kraken/streams?game=league+of+legends&limit=100");
 			$lolarray=json_decode($loljson);
 			?>
 
@@ -467,8 +467,8 @@
 						<div class="streamthumb">
 						<img class="actualthumb" src="<?
 						echo $lolarray->streams[25]->preview->medium;
-						?>"></a>
-						</div>
+						?>">
+						</div></a>
 						<div class="streamtitle trun">
 							<p><? echo $lolarray->streams[25]->channel->status; ?></p>
 						</div>
@@ -1028,55 +1028,6 @@
 						</div>
 						<div>
 						<p class="viewersandchannel"><? echo $lolarray->streams[59]->viewers; ?> viewers on <strong><? echo $lolarray->streams[59]->channel->name; ?></strong></p>
-						</div>
-						
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="col-md-4">
-						<a href="<? echo $lolarray->streams[60]->channel->url; ?>" target="_blank">
-						<div class="streamthumb">
-						<img class="actualthumb" src="<?
-						echo $lolarray->streams[60]->preview->medium;
-						?>">
-						</div></a>
-						<div class="streamtitle trun">
-							<p><? echo $lolarray->streams[60]->channel->status; ?></p>
-						</div>
-						<div>
-						<p class="viewersandchannel"><? echo $lolarray->streams[60]->viewers; ?> viewers on <strong><? echo $lolarray->streams[60]->channel->name; ?></strong></p>
-						</div>
-							
-						
-					</div>
-					<div class="col-md-4">
-						<a href="<? echo $lolarray->streams[13]->channel->url; ?>" target="_blank">
-						<div class="streamthumb">
-						<img class="actualthumb" src="<?
-						echo $lolarray->streams[13]->preview->medium;
-						?>"></a>
-						</div>
-						<div class="streamtitle trun">
-							<p><? echo $lolarray->streams[13]->channel->status; ?></p>
-						</div>
-						<div>
-						<p class="viewersandchannel"><? echo $lolarray->streams[13]->viewers; ?> viewers on <strong><? echo $lolarray->streams[13]->channel->name; ?></strong></p>
-						</div>
-						
-					</div>
-					<div class="col-md-4">
-						<a href="<? echo $lolarray->streams[14]->channel->url; ?>" target="_blank">
-						<div class="streamthumb">
-						<img class="actualthumb" src="<?
-						echo $lolarray->streams[14]->preview->medium;
-						?>"></a>
-						</div>
-						<div class="streamtitle trun">
-							<p><? echo $lolarray->streams[14]->channel->status; ?></p>
-						</div>
-						<div>
-						<p class="viewersandchannel"><? echo $lolarray->streams[14]->viewers; ?> viewers on <strong><? echo $lolarray->streams[14]->channel->name; ?></strong></p>
 						</div>
 						
 					</div>

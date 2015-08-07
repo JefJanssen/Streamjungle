@@ -108,17 +108,17 @@ $csgoarray = json_decode($csgojson);
 				
 				<div class="row">
 					<div class="col-md-4">
-						<a href="<? echo $csgoarray->streams[3]->channel->url; ?>" target="_blank">
+						<a href="<? echo $csgoarray->streams[0]->channel->url; ?>" target="_blank">
 						<div class="streamthumb">
 						<img class="actualthumb" src="<?
-						echo $csgoarray->streams[3]->preview->medium;
+						echo $csgoarray->streams[0]->preview->medium;
 						?>">
 						</div></a>
 						<div class="streamtitle trun">
-							<p><? echo $csgoarray->streams[3]->channel->status; ?></p>
+							<p><? echo $csgoarray->streams[0]->channel->status; ?></p>
 						</div>
 						<div>
-						<p class="viewersandchannel"><? echo $csgoarray->streams[3]->viewers; ?> viewers on <strong><? echo $csgoarray->streams[3]->channel->name; ?></strong></p>
+						<p class="viewersandchannel"><? echo $csgoarray->streams[0]->viewers; ?> viewers on <strong><? echo $csgoarray->streams[0]->channel->name; ?></strong></p>
 						</div>
 					</div>
 					<div class="col-md-4">

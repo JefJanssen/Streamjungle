@@ -1,5 +1,5 @@
 			<?
-			$loljson = file_get_contents("https://api.twitch.tv/kraken/streams?game=league+of+legends");
+			$loljson = file_get_contents("https://api.twitch.tv/kraken/streams?game=league+of+legends&limit=100");
 			$lolarray=json_decode($loljson);
 			?>
 
@@ -467,8 +467,8 @@
 						<div class="streamthumb">
 						<img class="actualthumb" src="<?
 						echo $lolarray->streams[25]->preview->medium;
-						?>"></a>
-						</div>
+						?>">
+						</div></a>
 						<div class="streamtitle trun">
 							<p><? echo $lolarray->streams[25]->channel->status; ?></p>
 						</div>
@@ -1033,59 +1033,145 @@
 					</div>
 				</div>
 				
-				<div class="row">
-					<div class="col-md-4">
-						<a href="<? echo $lolarray->streams[60]->channel->url; ?>" target="_blank">
-						<div class="streamthumb">
-						<img class="actualthumb" src="<?
-						echo $lolarray->streams[60]->preview->medium;
-						?>">
-						</div></a>
-						<div class="streamtitle trun">
-							<p><? echo $lolarray->streams[60]->channel->status; ?></p>
-						</div>
-						<div>
-						<p class="viewersandchannel"><? echo $lolarray->streams[60]->viewers; ?> viewers on <strong><? echo $lolarray->streams[60]->channel->name; ?></strong></p>
-						</div>
-							
-						
-					</div>
-					<div class="col-md-4">
-						<a href="<? echo $lolarray->streams[13]->channel->url; ?>" target="_blank">
-						<div class="streamthumb">
-						<img class="actualthumb" src="<?
-						echo $lolarray->streams[13]->preview->medium;
-						?>"></a>
-						</div>
-						<div class="streamtitle trun">
-							<p><? echo $lolarray->streams[13]->channel->status; ?></p>
-						</div>
-						<div>
-						<p class="viewersandchannel"><? echo $lolarray->streams[13]->viewers; ?> viewers on <strong><? echo $lolarray->streams[13]->channel->name; ?></strong></p>
-						</div>
-						
-					</div>
-					<div class="col-md-4">
-						<a href="<? echo $lolarray->streams[14]->channel->url; ?>" target="_blank">
-						<div class="streamthumb">
-						<img class="actualthumb" src="<?
-						echo $lolarray->streams[14]->preview->medium;
-						?>"></a>
-						</div>
-						<div class="streamtitle trun">
-							<p><? echo $lolarray->streams[14]->channel->status; ?></p>
-						</div>
-						<div>
-						<p class="viewersandchannel"><? echo $lolarray->streams[14]->viewers; ?> viewers on <strong><? echo $lolarray->streams[14]->channel->name; ?></strong></p>
-						</div>
-						
-					</div>
-				</div>
-				
 			</div>
 		</div>
+		
+		
+		
+		
+		
+		
+		
+		
 		<div class="col-lg-3">
-			ttestt rechtst
+			<div class="gametitle">
+				<h4 style="font-size: 25px; margin-left: 15px; margin-bottom: 15px;">Categories</h4>
+			</div>
+			<div class="offertext padding-10">
+				<div class="categs">
+					
+					<div class="categhead">
+						<p>Ranking</p>
+					</div>
+					<a href="#">
+					<div class="categsort">
+						<p>Challenger</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Master | Diamond</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Platinum | Gold</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Silver | Bronze</p>
+					</div></a>
+					<div class="categhead">
+						<p>Language</p>
+					</div>
+					<a href="#">
+					<div class="categsort">
+						<p>English</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>German</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>French</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Russian</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Spanish</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Dutch</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Portuguese</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Turkish</p>
+					</div></a>
+					<div class="categhead">
+						<p>Type</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Funny</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Educational</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Background Music</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Tournament</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Competition</p>
+					</div></a>
+					<div class="categhead">
+						<p>Main Position</p>
+					</div>
+					<a href="#">
+					<div class="categsort">
+						<p>Top lane</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Jungle</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Mid Lane</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>AD Carry</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Support</p>
+					</div></a>
+					<div class="categhead">
+						<p>Special</p>
+					</div>
+					<a href="#">
+					<div class="categsort">
+						<p>Pro Player</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Retired Pro Player</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Official Caster</p>
+					</div></a>
+					<a href="#">
+					<div class="categsort">
+						<p>Girl</p>
+					</div></a>
+					
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

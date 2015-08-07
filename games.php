@@ -65,18 +65,7 @@ $games6array = json_decode($games6json);
 </div>
 
 
-<div class="container">
-	<div class="jumbotron">
 
-		<h1 class="homejumboh">
-			Games
-		</h1>
-
-		<p class="homejumbop2">
-			Select your favorite game, and start finding your favorite streamers insanely easy!
-		</p>
-	</div>
-</div>
 
 <div class="container">
 

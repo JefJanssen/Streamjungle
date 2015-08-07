@@ -1,3 +1,8 @@
+<?
+$dota2json = file_get_contents("https://api.twitch.tv/kraken/streams?game=dota+2");
+$dota2array = json_decode($dota2json);
+?>
+
 <html>
 <head>
 
@@ -41,6 +46,931 @@
 		</div>
 	</div>
 </div>
+
+
+
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-9">
+			<div class="gametitle">
+				<h4 style="font-size: 30px;">Dota 2 Streams</h4>
+			</div>
+			<div class="streampic">
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[3]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[3]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[3]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[3]->viewers; ?> viewers on <strong><? echo $dota2array->streams[3]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[4]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[4]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[4]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[4]->viewers; ?> viewers on <strong><? echo $dota2array->streams[4]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[5]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[5]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[5]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[5]->viewers; ?> viewers on <strong><? echo $dota2array->streams[5]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[0]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[0]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[0]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[0]->viewers; ?> viewers on <strong><? echo $dota2array->streams[0]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[1]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[1]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[1]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[1]->viewers; ?> viewers on <strong><? echo $dota2array->streams[1]->channel->name; ?></strong></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="<? echo $dota2array->streams[2]->channel->url; ?>" target="_blank">
+						<div class="streamthumb">
+						<img class="actualthumb" src="<?
+						echo $dota2array->streams[2]->preview->medium;
+						?>">
+						</div></a>
+						<div class="streamtitle trun">
+							<p><? echo $dota2array->streams[2]->channel->status; ?></p>
+						</div>
+						<div>
+						<p class="viewersandchannel"><? echo $dota2array->streams[2]->viewers; ?> viewers on <strong><? echo $dota2array->streams[2]->channel->name; ?></strong></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			ttestt rechtst
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
 
 	<footer id="footer">
 		<div class="container">

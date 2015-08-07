@@ -1053,22 +1053,26 @@
 					<div class="categhead">
 						<p>Ranking</p>
 					</div>
-					<a href="#">
 					<div class="categsort">
-						<p>Challenger</p>
-					</div></a>
-					<a href="#">
+						
+							<input class="hide-checkbox" type="checkbox" id="tagchallenger" value="challenger" style="display: none;">
+							<label for="tagchallenger">Challenger</label>
+							
+					</div>
+					
 					<div class="categsort">
-						<p>Master | Diamond</p>
-					</div></a>
-					<a href="#">
+						<input class="hide-checkbox" type="checkbox" id="tagmaster" value="challenger" style="display: none;">
+						<label for="tagmaster">Master | Diamond</label>
+					</div>
 					<div class="categsort">
-						<p>Platinum | Gold</p>
-					</div></a>
-					<a href="#">
+						<input class="hide-checkbox" type="checkbox" id="tagplat" value="challenger" style="display: none;">
+						<label for="tagplat">Platinum | Gold</label>
+					</div>
+					
 					<div class="categsort">
-						<p>Silver | Bronze</p>
-					</div></a>
+						<input class="hide-checkbox" type="checkbox" id="tagsilver" value="challenger" style="display: none;">
+						<label for="tagsilver">Silver | Bronze</label>
+					</div>
 					<div class="categhead">
 						<p>Language</p>
 					</div>
@@ -1169,6 +1173,11 @@
 					<div class="categsort">
 						<p>Girl</p>
 					</div></a>
+					<script type="text/javascript">
+					[].forEach.call(document.querySelectorAll('.hide-checkbox'), function(element) {
+						element.style.display = 'none';
+					});
+					</script>
 					
 				</div>
 			</div>

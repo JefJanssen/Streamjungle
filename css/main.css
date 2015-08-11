@@ -20,7 +20,7 @@
     width: 100%;
     white-space: nowrap;
 }
- 
+
 .trun > * {
     display: table-cell;
     overflow: hidden;
@@ -75,7 +75,7 @@ a.navbar-brand {
 	color: white !important;
 	font-size: 100px !important;
 	margin-top: 0px;
-	
+
 }
 .jumbotron p {
 	font-family: 'Titillium Web', sans-serif;
@@ -132,7 +132,7 @@ a.navbar-brand {
 	padding-left: 6px;
 	padding-top: 11px;
 	padding-bottom: 9px;
-	
+
 }
 
 .infotitle2 h2 {
@@ -242,7 +242,7 @@ a.navbar-brand {
 	color: black;
 	border: 1px solid;
 	border-bottom: 3px solid;
-	
+
 	width:100%;
 }
 
@@ -256,7 +256,7 @@ a.navbar-brand {
 .categs a {
 	color: white;
 }
-.categs p {
+.categs label {
 	margin-left: 5px;
 	margin-bottom: 2px;
 	padding-bottom: 0px;
@@ -271,4 +271,39 @@ a.navbar-brand {
 .categsort {
 	border-bottom: 1px solid;
 	border-color: black;
+}
+.streamtags {
+	margin-left: 5px;
+	margin-bottom: 7px;
+}
+.streamtags span{
+	background-color: #777777;
+	color: white;
+	font-size: 12px;
+	margin-left:4px;
+	margin-right: 3px;
+	padding: 2px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.activecateg {
+	background-color: green !important;
+}
+label {
+	cursor: pointer;
+	width: 100%;
+	padding: 2px;
+	text-align: center;
+	border: 1px solid;
+	border-radius: 1em;
+	background-color: white;
+
+}
+input:checked + label {
+	background-color: #AD9393;
+	color:white;
+	padding: 2px;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 1em;
 }

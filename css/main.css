@@ -67,39 +67,36 @@ a.navbar-brand {
 /* JUMBOTRON HOME */
 .jumbotron {
 	background: #AD9393 !important;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 0px !important;
+	padding-bottom: 10px !important;
+
 }
 
-.jumbotron h1{
+.jumbotron h2{
 	font-family: 'Titillium Web', sans-serif;
 	color: white !important;
-	font-size: 100px !important;
-	margin-top: 0px;
+	font-size: 75px !important;
+	margin: 0px !important;
+	padding: 0px !important;
+	text-align: center;
 
 }
 .jumbotron p {
 	font-family: 'Titillium Web', sans-serif;
 	color: white;
 	font-size: 30px;
+	text-align: center;
+	margin-top: 35px !important;
 }
-.jumbotron p.homejumbop2 {
+.jumbotron p.testi {
 	font-family: 'Titillium Web', sans-serif;
 	color: white;
-	font-size: 25px;
+	font-size: 20px;
+	padding-top: 10px !important;
+	margin-top: 20px !important;
 }
-#myCarousel {
-	width: 320px;
-	height: 180px;
-	float: right;
-	border: 2px solid;
-}
-.carousel-inner img {
-	height: 180px;
-}
-#heightlimitpls {
-	height: 178px;
-}
+
+
 
 /* INFORMATION HOME */
 .offers {
@@ -154,7 +151,7 @@ a.navbar-brand {
 /* FOOTER */
 #footer {
 	background: #262626;
-	margin-top: 50px;
+	margin-top: 20px;
 	padding-top: 12px;
 }
 #footer h5 {
@@ -247,6 +244,9 @@ a.navbar-brand {
 
 	width:100%;
 }
+.col-md-4 {
+	height: 240px;
+}
 
 /* CATEGORY SELECT */
 .categs {
@@ -319,9 +319,9 @@ a.navbar-brand {
 .conlabel input,
 .conlabel textarea {
 	padding:10px;
-	width: 500px;
+	width: 450px;
 	box-sizing: border-box;
-	max-width: 750px;
+	max-width: 475px;
 }
 .conlabel input,
 .conlabel textarea {
@@ -332,16 +332,19 @@ button {
 	width:auto;
 }
 .muted {
-	color:#aaa;
+	color:gray;
 }
 .contactus {
 	width: 100%;
 	max-width:500px;
-	border-top:1px solid #eee;
+	border-top: 1px solid #eee;
 	border-bottom:1px solid #eee;
+	border: 3px solid #eee;
+	border-radius: 25px;
 	padding: 30px 20px;
 	box-sizing: border-box;
 	margin: 0 auto;
+	background-color: #AD9393;
 
 }
 .panel {
@@ -354,5 +357,34 @@ button {
 	margin-bottom: 20px;
 }
 .redalert {
-	color: #B02020;
+	background-color: #C95F5F;
+	border: 1px solid black;
+	border-radius: 15px;
+	padding: 5px;
+	color: #eeeeee;
+}
+
+/* SERVICES HOMEPAGE */
+.services {
+	background: #eeeeee;
+	height: 250px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+}
+.services h3 {
+	font-size: 27px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid black;
+}
+.services p {
+	font-size: 15px;
+}
+#servicebtn1 {
+	margin-top: 22px;
+}
+#servicebtn2 {
+	margin-top: 22px;
+}
+#servicebtn3 {
+	margin-top: 1px;
 }

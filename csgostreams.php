@@ -1210,13 +1210,33 @@ $csgoarray = json_decode($csgojson);
 
 
 	<script>
-	var stream0 = "<? echo $csgoarray->streams[0]->channel->name; ?>";
+	var streamers = {
+	    'esl_csgo': [
+	        'tournament',
+	        'competition',
+	        'english'
+	    ],
+			'pgl': [
+	        'english'
+	    ],
+			'freakazoid_tv': [
+					'english'
+			]
+	};
 
-	if(stream0 == "testy") {
-		$('#streamtag0').append("<span>Testy</span>");
+	var setTwitchClass1 = function(streamer) {
+	    var classNames = streamers[streamer];
+	    for (i=0; i<classNames.length; i++) {
+	        $('#stream0').addClass(classNames[i]);
+					$('#streamtag0').append("<span>" + classNames[i] + "</span>");
+	    }
+	};
 
-		$('#stream0').addClass('testy');
-	}
+	setTwitchClass1('<? echo $csgoarray->streams[0]->channel->name; ?>');
+
+
+
+
 	</script>
 
 

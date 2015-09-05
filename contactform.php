@@ -51,7 +51,7 @@
 <div class="container">
 
   <div class="contactus">
-    <h1>Feedback</h1><p class="redalert">Please note that when the submission of your feedback failed, it will show an error. If it succesfully sent it, you will be returned to our homepage, <strong>this is normal</strong>.</p><br>
+    <h1>Feedback</h1><p class="redalert">Please note that when the submission of your feedback failed, it will show an error. If it successfully sent it, you will be returned to our homepage, <strong>this is normal</strong>.</p><br>
     <?php if(!empty($errors)): ?>
     <div class="panel">
       <ul>

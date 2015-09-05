@@ -7,6 +7,9 @@
 </head>
 
 <body>
+
+<?php include_once("analyticstracking.php") ?>
+
 <div class="nav navbar-inverse navbar-fixed-top">
 	<div class="container">
 
@@ -32,69 +35,49 @@
 
 
 <div class="container">
-	<div class="jumbotron">
+	<div class="jumbotron" style="margin-bottom: 0px;">
 
 
 
-		<h1 class="homejumboh">
-			Stream Jungle
-		</h1>
+		<h2 class="homejumboh">
+			Finding <span style="color: #9C0000; font-size: 100px;">&#9679;</span><span style="color: black; font-size: 65px;">LIVE</span> streams perfect for you, made so easy.
+		</h2>
 
-		<p class="homejumbop">
-			Finding streams perfect for you, made so easy.
-		</p>
+		<p>Join the hundred million monthly users of <span style="color: purple;">Twitch.tv</span> world wide, but <strong>BETTER!</strong><br>Yes... Yes, you heard that correct. You can experience <span style="color: purple;">Twitch.tv</span> live streams even better through <span style="color: #9C0000;">Streamjungle.com</span>.<br><br><a href="games.php" class="btn btn-danger">WATCH NOW</a><br><span style="font-size: 15px;">It is completely free!</span></p>
+
 	</div>
 </div>
 
 <div class="container">
-	<div class="row" id="infor">
-		<div class="col-md-9">
-			<div class="offers">
-				<h4 style="margin:0px;">What Do We Offer</h4>
-			</div>
+	<div class="jumbotron" style="margin-top: 5px; background-color: #C95F5F !important;">
+		<p class="testi">We currently support 6 major games,<br><strong>League of Legends, Dota 2, Counter-Strike: Global Offensive, Hearthstone, World of Warcraft and Minecraft.</strong><br style="margin-top: 2px;"><span style="font-size: 15px;">Click below to watch which one your prefer! We OFCOURSE will add more games to our service, remember we are in early stages!<br>Or you can try to convince us to add your favorite game by using our contact form.</span><br><a href="games.php" class="btn btn-default">CHOOSE GAME AND WATCH</a><span style="color: #C95F5F;">...</span><a href="contactform.php" class="btn btn-default">CONTACT US</a></p>
+	</div>
+</div>
 
-			<div class="infotitle">
-				<h2 style="margin:0px;">Categorized Gaming Streams</h2>
-			</div>
-
-			<div class="offertext padding-10">
-				<h3>Streams in a wide variety of categories.. Pretty much.</h3>
-				<p>Have you ever wandered around a streaming service like TWITCH.TV, and just wanted to find a streamer of a specific sort? Like, a high ranked player, an international tournament or just a.. girl? <strong>Then this is THE website for you!</strong></p>
-				<p>You can sort your favorite streams in these MAIN categories:
-					<ul>
-						<li>Ranking</li>
-						<li>Language</li>
-						<li>Characteristics: e.g. Girl, Funny, Serious, Tournament...</li>
-					</ul>
-					Also, you can sort your streams in other categories, depending on which game your playing. e.g. League Of Legends has 'Mid Lane' as category.
-				</p>
-				<p>These categories are seen as tags for the streamer, everyone, including you, can recommend tags for a specific streamer, and if we approve, this tag will be added to this streamer on our website!</p>
-			</div>
-
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 services">
+			<h3>Categories</h3>
+			<p>Find your favorite streams through an easy to use category system. Select your game, and your pleased category and Streamjungle will show what you're looking for immediately. Even the average Teemo player can do this. ;)</p>
+			<a href="games.php" class="btn btn-danger" id="servicebtn1">Choose categories now</a>
 		</div>
-
-		<div class="col-md-3">
-			<div class="offers">
-				<h4 style="margin:0px;">Extra</h4>
-			</div>
-
-			<div class="infotitle2">
-				<h2 style="margin:0px;">Games We Support</h2>
-			</div>
-
-			<div class="offertext padding-10">
-				<ul class="greencheck"><strong>
-					<li>League Of Legends <div class="alignright">&check;</div></li>
-					<li>Dota 2 <div class="alignright">&check;</div></li>
-					<li>Counter-Strike: GO <div class="alignright">&check;</div></li>
-					<li>Hearthstone <div class="alignright">&check;</div></li>
-					<li>World of Warcraft <div class="alignright">&check;</div></li>
-					<li>Minecraft <div class="alignright">&check;</div></li>
-				</strong></ul>
-			</div>
+		<div class="col-md-4 services">
+			<h3>Twitch</h3>
+			<p>We currently support Twitch.tv streams only. We chose this platform over others simply because it's the most popular. In the future we will implement other platforms such as Youtube and Azubu, please remember we are in early stages of our website.</p>
+			<a href="games.php" class="btn btn-danger" id="servicebtn2">Watch Twitch Streams</a>
+		</div>
+		<div class="col-md-4 services">
+			<h3>Insanely Easy</h3>
+			<p>Streamjungle is super easy to use. Let's say, you want to watch a Diamond rank League of Legends player, who mostly plays in the jungle and is a girl. Well, you can.. in 5 clicks from this page. Correct, FIVE clicks. Click below, select your game, click these 3 categories, that's 5 clicks.</p>
+			<a href="games.php" class="btn btn-danger" id="servicebtn3">Try the ease now</a>
 		</div>
 	</div>
 </div>
+
+
+
+
+
 
 
 	<footer id="footer">
